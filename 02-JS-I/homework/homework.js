@@ -130,13 +130,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.ceil(num);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.floor(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -153,9 +153,10 @@ function esPositivo(numero) {
   if (numero === 0) {
     return false;
   } else if (numero > 0) {
-     return 'Es positivo';
-} else if (numero < 0) {
-  return 'Es negativo';
+    return 'Es positivo';
+  } else {
+    return 'Es negativo';
+  }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -169,7 +170,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + ' ' + apellido;
+  var miNombre = nombre + ' ' + apellido;
+  return miNombre;
 }
 
 function obtenerSaludo(nombre) {
