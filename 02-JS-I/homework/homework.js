@@ -62,9 +62,8 @@ function sonIguales(x, y) {
   // Tu código:
   if (x === y) {
     return true;
-  } else {
-    return false;
   }
+    return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -152,11 +151,11 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero === 0) {
     return false;
-  } else if (numero > 0) {
-    return 'Es positivo';
-  } else {
-    return 'Es negativo';
   }
+  else if (numero > 0) {
+    return 'Es positivo';
+  }
+    return 'Es negativo';
 }
 
 function agregarSimboloExclamacion(str) {
